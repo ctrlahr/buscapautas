@@ -5,12 +5,11 @@ from selenium import webdriver
 
 # Funções
 
-def verificar_palavras_encontradas(driver, texto):
+def verificar_palavras_encontradas(driver, *texto):
     try:
         elemento = WebDriverWait(driver, 10).until(
-            EC.text_to_be_present_in_element((By.TAG_NAME, 'body'), texto)
-    )
+            EC.text_to_be_present_in_element((By.TAG_NAME, 'body'), *texto)
+        )
         return True
     except:
-        return False    
-
+        return False

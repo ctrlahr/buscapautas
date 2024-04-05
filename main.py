@@ -24,14 +24,12 @@ for i in range(21):
     press('enter')
     press('backspace')
 
-
-palavras_encontradas = defs.verificar_palavras_encontradas(navegador, palavras_chave)
+# Chama a função e armazena se as palavras foram ou não achadas em uma variavel
+palavras_encontradas = defs.verificar_palavras_encontradas(navegador, palavras_chave) # Dá certo, mas só se só uma palavra for colocada na função
+print(palavras_encontradas)
 
 navegador.quit()  
-  
-if palavras_encontradas:
-    print('Palavras achadas')
-    
-else:
-    print('palavra não foi achada')
+
+# Mostra se as palavras selecionadas foram ou não achadas
+
     
