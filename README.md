@@ -1,2 +1,5 @@
 # busca_pautas
- bot que busca pautas no site do tcepe
+
+ ## Como usar
+ apenas execute o arquivo executável
+ 
